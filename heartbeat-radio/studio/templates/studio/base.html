@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+{% block content %}
+    <head>
+        <title>Ez Loans</title>
+    </head>
+
+    <!-- Load plotly-dash -->
+    {%load plotly_dash%}
+
+    <body class="text-center">
+        
+        <div class="plotly_class name='EzLoans' %} card" style="height: 100%; width: 100%">
+        {%plotly_app name="EzLoans" ratio=1 %}
+        </div>
+
+        {{ plot1 | safe }}
+        
+    </body>
+</html>
+{% endblock %}
